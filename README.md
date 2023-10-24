@@ -28,3 +28,5 @@ $ flutter run --flavor production --target lib/main_production.dart
 ```
 
 _\*Wheel Of Names works on iOS, Android._
+
+[very_good_cli_link]: https://github.com/VeryGoodOpenSource/very_good_cli
