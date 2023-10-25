@@ -1,8 +1,11 @@
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:wheel_of_chores/features/counter/state.dart';
+import 'package:wheel_of_chores/services/chore_service.dart';
 
 class CounterCubit extends HydratedCubit<CounterState> {
-  CounterCubit() : super(const CounterState());
+  CounterCubit({required this.choreService}) : super(const CounterState());
+
+  final ChoreService choreService;
 
   void increment() => emit(state.copyWith(count: state.count + 1));
 

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "834192717183",
+    "project_id": "wheel-of-chores-99a1d",
+    "storage_bucket": "wheel-of-chores-99a1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834192717183:android:370a9ab8ae5abce4b6564a",
+        "android_client_info": {
+          "package_name": "dev.codrut.wheel_of_chores"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834192717183-ofuf2p5p82pteh413h11kqj203v90n12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyNGIXGX-Yatbq5tB4n0zo5B_V2zneGMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834192717183-ofuf2p5p82pteh413h11kqj203v90n12.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "834192717183-q6960finej9cfl3j27t312qeqo17arvm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dev.codrut.wheel"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,5 +3,4 @@ class Assets {
   Assets._();
 
   static const String imagesFlutterLogo = 'assets/images/flutter_logo.png';
-
 }
