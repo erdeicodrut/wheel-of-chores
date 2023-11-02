@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_firestore_odm/cloud_firestore_odm.dart';
 import 'package:wheel_of_chores/data/utils.dart';
 
@@ -12,6 +13,7 @@ class Chore {
 
   final String name;
   final DateTime date;
+
 }
 
 final choresRef = ChoreCollectionReference();
