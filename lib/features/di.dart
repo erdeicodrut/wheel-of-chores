@@ -1,5 +1,6 @@
 import 'package:wheel_of_chores/app/di.dart';
-import 'package:wheel_of_chores/features/counter/counter.dart';
+import 'package:wheel_of_chores/features/counter/module.dart';
+import 'package:wheel_of_chores/features/home_page/cubit.dart';
 import 'package:wheel_of_chores/services/chore_service.dart';
 
 void registerFeatures() {
@@ -7,5 +8,9 @@ void registerFeatures() {
     () => CounterCubit(
       choreService: getIt.get<ChoreService>(),
     ),
+  );
+
+  getIt.registerFactory(
+    HomeCubit.new,
   );
 }

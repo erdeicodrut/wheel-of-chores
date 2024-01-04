@@ -2,7 +2,7 @@ import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:wheel_of_chores/app/di.dart';
-import 'package:wheel_of_chores/features/counter/counter.dart';
+import 'package:wheel_of_chores/features/counter/module.dart';
 import 'package:wheel_of_chores/l10n/l10n.dart';
 import 'package:wheel_of_chores/r.dart';
 

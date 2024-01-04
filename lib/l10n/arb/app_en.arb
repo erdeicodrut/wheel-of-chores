@@ -3,5 +3,8 @@
   "counterAppBarTitle": "Counter",
   "@counterAppBarTitle": {
     "description": "Text shown in the AppBar of the Counter Page"
-  }
+  },
+  "hello": "Hello, {name}!",
+  "spin_the_wheel": "Spin the wheel to get started!",
+  "spin": "SPIN"
 }
