@@ -1,12 +1,10 @@
-import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:wheel_of_chores/app/di.dart';
 import 'package:wheel_of_chores/features/counter/module.dart';
+import 'package:wheel_of_chores/generated/assets.dart';
 import 'package:wheel_of_chores/l10n/l10n.dart';
-import 'package:wheel_of_chores/r.dart';
 
-@RoutePage()
 class CounterPage extends StatelessWidget {
   const CounterPage({super.key});
 
@@ -28,12 +26,13 @@ class CounterView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(l10n.counterAppBarTitle)),
       body: Center(
-          child: Column(
-        children: [
-          Image.asset(R.images.flutter_logo),
-          const CounterText(),
-        ],
-      )),
+        child: Column(
+          children: [
+            Image.asset(Assets.imagesFlutterLogo),
+            const CounterText(),
+          ],
+        ),
+      ),
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.end,

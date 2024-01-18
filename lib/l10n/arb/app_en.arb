@@ -6,5 +6,15 @@
   },
   "hello": "Hello, {name}!",
   "spin_the_wheel": "Spin the wheel to get started!",
-  "spin": "SPIN"
+  "spin": "SPIN",
+  "name": "Codrut",
+  "members": "Members",
+  "rooms": "Rooms",
+  "account_settings": "Account Settings",
+  "settings": "Settings",
+  "add_room": "Add Room",
+  "todo_list": "To Do List",
+  "new_chore": "New Chore",
+  "add_chore": "Add chore",
+  "bedroom": "bedroom"
 }

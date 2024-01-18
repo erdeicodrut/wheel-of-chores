@@ -34,7 +34,7 @@ class _WheelState extends State<Wheel> {
           height: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
             borderRadius: const BorderRadius.all(Radius.circular(10000000000)),
-            color: Theme.of(context).splashColor,
+            color: Theme.of(context).disabledColor,
           ),
           padding: const EdgeInsets.all(30),
           child: Stack(
@@ -75,7 +75,7 @@ class _WheelState extends State<Wheel> {
                   decoration: BoxDecoration(
                     borderRadius:
                         const BorderRadius.all(Radius.circular(10000000000)),
-                    color: Theme.of(context).splashColor,
+                    color: Theme.of(context).disabledColor,
                     border: Border.all(color: Theme.of(context).disabledColor),
                   ),
                   child: InkWell(

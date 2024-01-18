@@ -1,7 +1,17 @@
+import 'package:dartx/dartx.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:wheel_of_chores/generated/assets.dart';
 
 class BottomNavBar extends StatelessWidget {
-  const BottomNavBar({super.key});
+  const BottomNavBar({
+    required this.setActiveIndex,
+    required this.activeIndex,
+    super.key,
+  });
+
+  final void Function(int) setActiveIndex;
+  final int activeIndex;
 
   @override
   Widget build(BuildContext context) {
@@ -14,30 +24,25 @@ class BottomNavBar extends StatelessWidget {
           color: Theme.of(context).primaryColorDark,
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.ad_units_rounded,
-                color: Theme.of(context).primaryColorLight,
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.ad_units_rounded,
-                color: Theme.of(context).scaffoldBackgroundColor,
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.ad_units_rounded,
-                color: Theme.of(context).scaffoldBackgroundColor,
-              ),
-            ),
-          ],
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: const <Set<String>>[
+            {Assets.iconsHome,Assets.iconsHomeFilled},
+            {Assets.iconsNotebook,Assets.iconsNotebookFilled},
+            {Assets.iconsSettings,Assets.iconsSettingsFilled},
+          ]
+              .mapIndexed(
+                (index, p1) => IconButton(
+                  onPressed: () => setActiveIndex(index),
+                  icon: SvgPicture.asset(
+                    activeIndex == index ? p1.last : p1.first,
+                    width: 24,
+                    color: activeIndex == index
+                        ? Theme.of(context).primaryColorLight
+                        : Theme.of(context).scaffoldBackgroundColor,
+                  ),
+                ),
+              )
+              .toList(),
         ),
       ),
     );
