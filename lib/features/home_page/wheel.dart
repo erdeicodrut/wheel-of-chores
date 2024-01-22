@@ -33,7 +33,7 @@ class _WheelState extends State<Wheel> {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
-            borderRadius: const BorderRadius.all(Radius.circular(10000000000)),
+            shape: BoxShape.circle,
             color: Theme.of(context).disabledColor,
           ),
           padding: const EdgeInsets.all(30),
@@ -73,8 +73,7 @@ class _WheelState extends State<Wheel> {
                 child: Container(
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    borderRadius:
-                        const BorderRadius.all(Radius.circular(10000000000)),
+                    shape: BoxShape.circle,
                     color: Theme.of(context).disabledColor,
                     border: Border.all(color: Theme.of(context).disabledColor),
                   ),
@@ -82,8 +81,7 @@ class _WheelState extends State<Wheel> {
                     onTap: isAnimating ? () {} : handleRoll,
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(100)),
+                        shape: BoxShape.circle,
                         color: Theme.of(context).primaryColor,
                       ),
                       width: 75,
