@@ -13,7 +13,7 @@ final _shellNavigatorBKey = GlobalKey<NavigatorState>(debugLabel: 'shellB');
 final _shellNavigatorCKey = GlobalKey<NavigatorState>(debugLabel: 'shellC');
 
 final goRouter = GoRouter(
-  initialLocation: '/wheel',
+  initialLocation: HomePage.path,
   navigatorKey: _rootNavigatorKey,
   debugLogDiagnostics: true,
   routes: [
@@ -26,7 +26,8 @@ final goRouter = GoRouter(
           navigatorKey: _shellNavigatorAKey,
           routes: [
             GoRoute(
-              path: '/wheel',
+              path: HomePage.path,
+              name: HomePage.name,
               pageBuilder: (context, state) => const NoTransitionPage(
                 child: HomePage(),
               ),
@@ -38,13 +39,15 @@ final goRouter = GoRouter(
           routes: [
             // Shopping Cart
             GoRoute(
-              path: '/chores_list',
+              path: ChoresListPage.path,
+              name: ChoresListPage.name,
               pageBuilder: (context, state) => const NoTransitionPage(
                 child: ChoresListPage(),
               ),
               routes: [
                 GoRoute(
-                  path: 'add_chore',
+                  path: AddChorePage.path,
+                  name: AddChorePage.name,
                   builder: (context, state) => const AddChorePage(),
                 ),
               ],
@@ -56,7 +59,8 @@ final goRouter = GoRouter(
           routes: [
             // Shopping Cart
             GoRoute(
-              path: '/settings',
+              path: SettingsPage.path,
+              name: SettingsPage.name,
               pageBuilder: (context, state) => const NoTransitionPage(
                 child: SettingsPage(),
               ),

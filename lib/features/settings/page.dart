@@ -10,6 +10,8 @@ import 'package:wheel_of_chores/l10n/l10n.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
+  static const String path = '/settings';
+  static const String name = 'settings';
 
   @override
   Widget build(BuildContext context) {

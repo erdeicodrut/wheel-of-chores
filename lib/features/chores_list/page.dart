@@ -5,11 +5,14 @@ import 'package:wheel_of_chores/app/di.dart';
 import 'package:wheel_of_chores/common/ui/button/plus_button.dart';
 import 'package:wheel_of_chores/common/ui/card.dart';
 import 'package:wheel_of_chores/common/ui/dropdown.dart';
+import 'package:wheel_of_chores/features/add_chore/page.dart';
 import 'package:wheel_of_chores/features/chores_list/module.dart';
 import 'package:wheel_of_chores/l10n/l10n.dart';
 
 class ChoresListPage extends StatelessWidget {
   const ChoresListPage({super.key});
+  static const String path = '/chores_list';
+  static const String name = 'chores_list';
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +43,7 @@ class ChoresListView extends StatelessWidget {
             PlusButton(
               text: context.l10n.new_chore,
               onTap: () {
-                context.go('/chores_list/add_chore');
+                context.goNamed(AddChorePage.name);
               },
             ),
             const SizedBox(height: 24),

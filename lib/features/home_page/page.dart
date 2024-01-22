@@ -8,7 +8,9 @@ import 'package:wheel_of_chores/l10n/l10n.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
-
+  static const String path = '/home';
+  static const String name = 'home';
+  
   @override
   Widget build(BuildContext context) {
     return BlocProvider(

@@ -7,6 +7,8 @@ import 'package:wheel_of_chores/l10n/l10n.dart';
 
 class AddChorePage extends StatelessWidget {
   const AddChorePage({super.key});
+  static const String path = 'add_chore';
+  static const String name = 'add_chore';
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class AddChoreView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:  Text(context.l10n.add_chore)),
+      appBar: AppBar(title: Text(context.l10n.add_chore)),
       body: Center(
         child: Column(
           children: [
