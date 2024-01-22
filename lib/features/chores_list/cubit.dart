@@ -4,7 +4,8 @@ import 'package:wheel_of_chores/features/chores_list/state.dart';
 import 'package:wheel_of_chores/services/chore_service.dart';
 
 class ChoresListCubit extends HydratedCubit<ChoresListState> {
-  ChoresListCubit({required this.choreService}) : super(const ChoresListState());
+  ChoresListCubit({required this.choreService})
+      : super(const ChoresListState());
 
   final ChoreService choreService;
 

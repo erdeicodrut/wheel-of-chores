@@ -60,7 +60,10 @@ class _DropdownState extends State<Dropdown> {
           iconStyleData: IconStyleData(
             icon: SvgPicture.asset(
               Assets.iconsAngleSmallDownFilled,
-              color: Theme.of(context).primaryColorDark,
+              colorFilter: ColorFilter.mode(
+                Theme.of(context).primaryColorDark,
+                BlendMode.srcIn,
+              ),
             ),
             iconSize: 18,
           ),

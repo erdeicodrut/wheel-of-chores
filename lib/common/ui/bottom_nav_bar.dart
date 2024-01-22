@@ -26,9 +26,9 @@ class BottomNavBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: const <Set<String>>[
-            {Assets.iconsHome,Assets.iconsHomeFilled},
-            {Assets.iconsNotebook,Assets.iconsNotebookFilled},
-            {Assets.iconsSettings,Assets.iconsSettingsFilled},
+            {Assets.iconsHome, Assets.iconsHomeFilled},
+            {Assets.iconsNotebook, Assets.iconsNotebookFilled},
+            {Assets.iconsSettings, Assets.iconsSettingsFilled},
           ]
               .mapIndexed(
                 (index, p1) => IconButton(
@@ -36,9 +36,12 @@ class BottomNavBar extends StatelessWidget {
                   icon: SvgPicture.asset(
                     activeIndex == index ? p1.last : p1.first,
                     width: 24,
-                    color: activeIndex == index
-                        ? Theme.of(context).primaryColorLight
-                        : Theme.of(context).scaffoldBackgroundColor,
+                    colorFilter: ColorFilter.mode(
+                      activeIndex == index
+                          ? Theme.of(context).primaryColorLight
+                          : Theme.of(context).scaffoldBackgroundColor,
+                      BlendMode.srcIn,
+                    ),
                   ),
                 ),
               )

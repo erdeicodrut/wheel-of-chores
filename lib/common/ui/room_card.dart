@@ -10,7 +10,7 @@ class RoomCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 5),
-      child: Container(
+      child: DecoratedBox(
         decoration: BoxDecoration(
           color: Theme.of(context).scaffoldBackgroundColor,
           borderRadius: const BorderRadius.all(Radius.circular(20)),
@@ -33,7 +33,10 @@ class RoomCard extends StatelessWidget {
               child: SvgPicture.asset(
                 Assets.iconsAlarmclock,
                 width: 42,
-                color: Theme.of(context).primaryColor,
+                colorFilter: ColorFilter.mode(
+                  Theme.of(context).primaryColor,
+                  BlendMode.srcIn,
+                ),
               ),
             ),
             const SizedBox(width: 16),
@@ -48,11 +51,14 @@ class RoomCard extends StatelessWidget {
               child: IconButton(
                 icon: SvgPicture.asset(
                   Assets.iconsTrash,
-                  color: Theme.of(context).primaryColorDark,
+                  colorFilter: ColorFilter.mode(
+                    Theme.of(context).primaryColorDark,
+                    BlendMode.srcIn,
+                  ),
                 ),
                 onPressed: () {},
               ),
-            )
+            ),
           ],
         ),
       ),

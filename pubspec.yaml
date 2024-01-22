@@ -50,10 +50,10 @@ flutter:
 
   assets:
     - assets/
-    - assets/images/
     - assets/elements/
     - assets/icons/
     - assets/elements/checkbox/
+    # - assets/images/
 
   fonts:
     - family: Poppins

@@ -11,3 +11,4 @@ analyzer:
     - lib/**.inject.dart
     - lib/**.g.dart
     - lib/**.gr.dart
+    - lib/generated/*.dart

@@ -25,7 +25,10 @@ class ChoreCard extends StatelessWidget {
               SvgPicture.asset(
                 Assets.iconsAlarmclock,
                 width: 14,
-                color: Theme.of(context).primaryColor,
+                colorFilter: ColorFilter.mode(
+                  Theme.of(context).primaryColor,
+                  BlendMode.srcIn,
+                ),
               ),
               const SizedBox(width: 4),
               const Text('28-11-2023'),
@@ -33,7 +36,10 @@ class ChoreCard extends StatelessWidget {
               SvgPicture.asset(
                 Assets.iconsUser,
                 width: 14,
-                color: Theme.of(context).primaryColor,
+                colorFilter: ColorFilter.mode(
+                  Theme.of(context).primaryColor,
+                  BlendMode.srcIn,
+                ),
               ),
               const SizedBox(width: 4),
               const CircleAvatar(

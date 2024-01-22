@@ -13,7 +13,7 @@ class PlusButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: GestureDetector(
-        onTap: onTap ?? () => print('Pressed $text button'),
+        onTap: onTap ?? () => debugPrint('Pressed $text button'),
         child: Container(
           decoration: BoxDecoration(
             color: Theme.of(context).primaryColor,
@@ -26,7 +26,10 @@ class PlusButton extends StatelessWidget {
               SvgPicture.asset(
                 Assets.elementsPlus,
                 width: 24,
-                color: Colors.white,
+                colorFilter: const ColorFilter.mode(
+                  Colors.white,
+                  BlendMode.srcIn,
+                ),
               ),
               const SizedBox(width: 16),
               Text(

@@ -28,7 +28,7 @@ class ChoresListView extends StatelessWidget {
     final l10n = context.l10n;
     return Scaffold(
       appBar: AppBar(
-        title: Text(context.l10n.todo_list),
+        title: Text(l10n.todo_list),
         centerTitle: false,
         titleSpacing: 24,
       ),
@@ -56,7 +56,7 @@ class ChoresListView extends StatelessWidget {
                   ChoreCard(),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

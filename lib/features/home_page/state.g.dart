@@ -6,22 +6,22 @@ part of 'state.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$CounterStateImpl _$$CounterStateImplFromJson(Map<String, dynamic> json) =>
-    _$CounterStateImpl(
+_$HomeStateImpl _$$HomeStateImplFromJson(Map<String, dynamic> json) =>
+    _$HomeStateImpl(
       count: json['count'] as int? ?? 0,
     );
 
-const _$$CounterStateImplFieldMap = <String, String>{
+const _$$HomeStateImplFieldMap = <String, String>{
   'count': 'count',
 };
 
 // ignore: unused_element
-abstract class _$$CounterStateImplPerFieldToJson {
+abstract class _$$HomeStateImplPerFieldToJson {
   // ignore: unused_element
   static Object? count(int instance) => instance;
 }
 
-Map<String, dynamic> _$$CounterStateImplToJson(_$CounterStateImpl instance) =>
+Map<String, dynamic> _$$HomeStateImplToJson(_$HomeStateImpl instance) =>
     <String, dynamic>{
       'count': instance.count,
     };

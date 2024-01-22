@@ -10,7 +10,10 @@ class CustomCheckbox extends StatelessWidget {
     return SvgPicture.asset(
       Assets.checkboxChecked,
       width: 24,
-      color: Theme.of(context).shadowColor,
+      colorFilter: ColorFilter.mode(
+        Theme.of(context).shadowColor,
+        BlendMode.srcIn,
+      ),
     );
   }
 }

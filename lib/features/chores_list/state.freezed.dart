@@ -14,33 +14,33 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-CounterState _$CounterStateFromJson(Map<String, dynamic> json) {
-  return _CounterState.fromJson(json);
+ChoresListState _$ChoresListStateFromJson(Map<String, dynamic> json) {
+  return _ChoresListState.fromJson(json);
 }
 
 /// @nodoc
-mixin _$CounterState {
+mixin _$ChoresListState {
   int get count => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $CounterStateCopyWith<CounterState> get copyWith =>
+  $ChoresListStateCopyWith<ChoresListState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $CounterStateCopyWith<$Res> {
-  factory $CounterStateCopyWith(
-          CounterState value, $Res Function(CounterState) then) =
-      _$CounterStateCopyWithImpl<$Res, CounterState>;
+abstract class $ChoresListStateCopyWith<$Res> {
+  factory $ChoresListStateCopyWith(
+          ChoresListState value, $Res Function(ChoresListState) then) =
+      _$ChoresListStateCopyWithImpl<$Res, ChoresListState>;
   @useResult
   $Res call({int count});
 }
 
 /// @nodoc
-class _$CounterStateCopyWithImpl<$Res, $Val extends CounterState>
-    implements $CounterStateCopyWith<$Res> {
-  _$CounterStateCopyWithImpl(this._value, this._then);
+class _$ChoresListStateCopyWithImpl<$Res, $Val extends ChoresListState>
+    implements $ChoresListStateCopyWith<$Res> {
+  _$ChoresListStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -62,22 +62,22 @@ class _$CounterStateCopyWithImpl<$Res, $Val extends CounterState>
 }
 
 /// @nodoc
-abstract class _$$CounterStateImplCopyWith<$Res>
-    implements $CounterStateCopyWith<$Res> {
-  factory _$$CounterStateImplCopyWith(
-          _$CounterStateImpl value, $Res Function(_$CounterStateImpl) then) =
-      __$$CounterStateImplCopyWithImpl<$Res>;
+abstract class _$$ChoresListStateImplCopyWith<$Res>
+    implements $ChoresListStateCopyWith<$Res> {
+  factory _$$ChoresListStateImplCopyWith(_$ChoresListStateImpl value,
+          $Res Function(_$ChoresListStateImpl) then) =
+      __$$ChoresListStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int count});
 }
 
 /// @nodoc
-class __$$CounterStateImplCopyWithImpl<$Res>
-    extends _$CounterStateCopyWithImpl<$Res, _$CounterStateImpl>
-    implements _$$CounterStateImplCopyWith<$Res> {
-  __$$CounterStateImplCopyWithImpl(
-      _$CounterStateImpl _value, $Res Function(_$CounterStateImpl) _then)
+class __$$ChoresListStateImplCopyWithImpl<$Res>
+    extends _$ChoresListStateCopyWithImpl<$Res, _$ChoresListStateImpl>
+    implements _$$ChoresListStateImplCopyWith<$Res> {
+  __$$ChoresListStateImplCopyWithImpl(
+      _$ChoresListStateImpl _value, $Res Function(_$ChoresListStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -85,7 +85,7 @@ class __$$CounterStateImplCopyWithImpl<$Res>
   $Res call({
     Object? count = null,
   }) {
-    return _then(_$CounterStateImpl(
+    return _then(_$ChoresListStateImpl(
       count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
@@ -96,11 +96,11 @@ class __$$CounterStateImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$CounterStateImpl implements _CounterState {
-  const _$CounterStateImpl({this.count = 0});
+class _$ChoresListStateImpl implements _ChoresListState {
+  const _$ChoresListStateImpl({this.count = 0});
 
-  factory _$CounterStateImpl.fromJson(Map<String, dynamic> json) =>
-      _$$CounterStateImplFromJson(json);
+  factory _$ChoresListStateImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ChoresListStateImplFromJson(json);
 
   @override
   @JsonKey()
@@ -108,14 +108,14 @@ class _$CounterStateImpl implements _CounterState {
 
   @override
   String toString() {
-    return 'CounterState(count: $count)';
+    return 'ChoresListState(count: $count)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CounterStateImpl &&
+            other is _$ChoresListStateImpl &&
             (identical(other.count, count) || other.count == count));
   }
 
@@ -126,27 +126,28 @@ class _$CounterStateImpl implements _CounterState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$CounterStateImplCopyWith<_$CounterStateImpl> get copyWith =>
-      __$$CounterStateImplCopyWithImpl<_$CounterStateImpl>(this, _$identity);
+  _$$ChoresListStateImplCopyWith<_$ChoresListStateImpl> get copyWith =>
+      __$$ChoresListStateImplCopyWithImpl<_$ChoresListStateImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CounterStateImplToJson(
+    return _$$ChoresListStateImplToJson(
       this,
     );
   }
 }
 
-abstract class _CounterState implements CounterState {
-  const factory _CounterState({final int count}) = _$CounterStateImpl;
+abstract class _ChoresListState implements ChoresListState {
+  const factory _ChoresListState({final int count}) = _$ChoresListStateImpl;
 
-  factory _CounterState.fromJson(Map<String, dynamic> json) =
-      _$CounterStateImpl.fromJson;
+  factory _ChoresListState.fromJson(Map<String, dynamic> json) =
+      _$ChoresListStateImpl.fromJson;
 
   @override
   int get count;
   @override
   @JsonKey(ignore: true)
-  _$$CounterStateImplCopyWith<_$CounterStateImpl> get copyWith =>
+  _$$ChoresListStateImplCopyWith<_$ChoresListStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
